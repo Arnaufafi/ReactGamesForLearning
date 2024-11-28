@@ -1,0 +1,64 @@
+/* Contenedor del formulario con una clase específica */
+.input-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del input */
+.input-form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-form-input:focus {
+    border-color: #4c6baf; /* Resalta el borde del input cuando está en foco */
+}
+
+.input-form-input:hover {
+    border-color: #c830e6; /* Resalta el borde del input cuando está en foco */
+}
+
+/* Estilo del botón */
+.input-form-button {
+    padding: 10px 20px;
+    background-color: #4c6baf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover sobre el botón */
+.input-form-button:hover {
+    background-color: #c830e6;
+}
+
+/* Desactivar el botón si el input está vacío */
+.input-form-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Opcional: Estilo para el mensaje de error o advertencia */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+}
